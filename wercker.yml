@@ -25,10 +25,6 @@ build:
         name: echo
         code: |
           echo "hello world!"
-    - script:
-        name: docker
-        code: |
-          docker ps
     - mikewright/slack-notifier:
         url: $SLACK_URL
         channel: bots
