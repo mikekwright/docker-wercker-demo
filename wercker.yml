@@ -25,16 +25,16 @@ build:
         name: echo
         code: |
           echo "hello world!"
+    - alianza/slack-notifier:
+        url: $SLACK_URL
+        channel: bots
+        username: alianzabot 
+        branch: master
+        icon_emoji: ":thumbsup:"
     - mikewright/slack-notifier:
         url: $SLACK_URL
         channel: bots
         username: buildbot
         branch: master
         icon_emoji: ":thumbsup:"
-    - alianza/slack-notifier:
-        url: $SLACK_URL
-        channel: bots
-        username: buildbot
-        branch: master
-        icon_emoji: ":thumbsup:"
-
+    
