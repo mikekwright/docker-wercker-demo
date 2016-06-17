@@ -31,4 +31,10 @@ build:
         username: buildbot
         branch: master
         icon_emoji: ":thumbsup:"
+    - alianza/slack-notifier:
+        url: $SLACK_URL
+        channel: bots
+        username: buildbot
+        branch: master
+        icon_emoji: ":thumbsup:"
 
