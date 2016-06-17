@@ -29,4 +29,10 @@ build:
         name: docker
         code: |
           docker ps
+    - mikewright/slack-notifier:
+        url: $SLACK_URL
+        channel: bots
+        username: buildbot
+        branch: master
+        icon_emoji: ":thumbsup:"
 
